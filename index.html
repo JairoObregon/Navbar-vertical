@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="sidemenu" class="menu-expanded">
+        <!--   header -->
+        <div id="header">
+            <div id="title">
+                <i class="fab fa-spotify" style="font-size: 25px;"> Spotify</i>
+            </div>
+            <div id="menu-btn">
+                <div class="btn-hamburger"></div>
+                <div class="btn-hamburger"></div>
+                <div class="btn-hamburger"></div>
+            </div>
+        </div>
+        <div id="profile">
+            <div id="photo">
+                <img src="photo.jpg" alt="" srcset="">
+            </div>
+            <div id="name"><span>Jairo</span></div>
+        </div>
+        <div id="menu-items" >
+            <div class="item">
+                <a href="#">
+                    <div class="icon"> <i class="fas fa-home" style="font-size: 30px;" ></i></div>
+                    <div class="title">Home</div>
+                </a>
+            </div>
+            <div class="item separador">
+                <a href="#"> 
+                    <div class="icon"> <i class="fas fa-search" style="font-size: 30px;"></i></div>
+                    <div class="title">Buscar</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="main-container">
+        holaa
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <script>
+        const btn= document.querySelector('#menu-btn');
+        const menu= document.querySelector('#sidemenu');
+        btn.addEventListener('click',e =>{
+            menu.classList.toggle("menu-expanded");
+            menu.classList.toggle("menu-collapsed");
+            document.querySelector('body').classList.toggle('body-expanded');
+
+        });
+    </script>
+</body>
+</html>
